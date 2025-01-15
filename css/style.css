@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'Isamiri';
+    src: url('./../fonts/IsamiRiDisplayBold.ttf');
+}
+
+body {
+    font-family: "Isamiri", serif;
+    background: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-row: auto auto;
+    max-width: 1135px;
+    padding: 0 15px;
+    margin: 0 auto  ;
+    gap: 20px;
+}
+
+/*cvetaeva*/
+
+.cvetaeva__content {
+    height: 520px;
+    width: 345px;
+    align-items: center;
+    position: relative;
+    padding: 90px 35px;
+    background: #2B2B2B;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.cvetaeva__content:hover {
+    box-shadow: -10px -5px 25px 0 rgba(233, 77, 77, 0.1), -41px -20px 45px 0 rgba(233, 77, 77, 0.09), -92px -45px 61px 0 rgba(233, 77, 77, 0.05), -163px -80px 73px 0 rgba(233, 77, 77, 0.01), -255px -125px 79px 0 rgba(233, 77, 77, 0);
+    background: linear-gradient(180deg, #2b2b2b 0%, #212121 100%);
+    scale: 1.05;
+    .cvetaeva__badge {
+        bottom: 20px;
+    }
+
+    .cvetaeva__violet {
+        rotate: 0deg;
+        right: -25px;
+        bottom: 50px;
+    }
+
+    .cvetaeva__red {
+        rotate: 0deg;
+        left: -10px;
+        top: -10px;
+    }
+    
+}
+
+.cvetaeva {
+    position: relative;
+    z-index: 1;
+}
+
+.cvetaeva__badge {
+    left: 50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+    background: #F4E5FF;
+    padding: 3px 5px;
+    border-radius: 3px;
+    max-width: 220px;
+    bottom: -120px;
+    z-index: 999;
+    transition: all .6s ease-in-out;
+}
+
+.cvetaeva__name {
+    text-align: start;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1e1e1e;
+    padding-right: 90px;
+}
+
+.cvetaeva__lastname {
+    text-align: end;
+    font-weight: 500;
+    font-size: 24px;
+    color: #E94D4D;
+    padding-left: 75px;
+}
+
+.cvetaeva__violet {
+    rotate: -90deg;
+    position: absolute;
+    right: -330px;
+    bottom: -45px;
+    z-index: 99;
+    transition: all .6s ease-in-out;
+}
+
+.cvetaeva__red {
+    rotate: 90deg;
+    object-fit: cover;
+    position: absolute;
+    left: -350px;
+    top: -220px;
+    z-index: 0;
+    transition: all .6s ease-in-out;
+}
+
+/*mayak*/
+
+.mayak__content {
+    height: 520px;
+    width: 345px;
+    align-items: center;
+    position: relative;
+    padding: 45px 25px;
+    background: #2B2B2B;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.mayak__content:hover {
+    box-shadow: 7px 8px 24px 0 rgba(82, 77, 233, 0.1), 30px 32px 44px 0 rgba(82, 77, 233, 0.09), 67px 71px 59px 0 rgba(82, 77, 233, 0.05), 120px 127px 70px 0 rgba(82, 77, 233, 0.01), 187px 198px 76px 0 rgba(82, 77, 233, 0);
+    background: linear-gradient(180deg, #2b2b2b 0%, #212121 100%);
+    scale: 1.05;
+    .mayak__badge {
+        bottom: 7px;
+    }
+
+    .mayak__violet {
+        rotate: 0deg;
+        right: -25px;
+        bottom: -15px;
+    }
+
+    .mayak__red {
+        rotate: 0deg;
+        left: -33px;
+        top: -40px;
+    }
+    
+}
+
+.mayak {
+    position: relative;
+    z-index: 1;
+}
+
+.mayak__badge {
+    left: 50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+    background: #F4E5FF;
+    padding: 3px 5px;
+    border-radius: 3px;
+    max-width: 220px;
+    bottom: -120px;
+    z-index: 999;
+    transition: all .6s ease-in-out;
+}
+
+.mayak__name {
+    text-align: start;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1e1e1e;
+    padding-right: 90px;
+}
+
+.mayak__lastname {
+    text-align: end;
+    font-weight: 500;
+    font-size: 24px;
+    color: #524de9;
+
+}
+
+.mayak__violet {
+    rotate: 90deg;
+    position: absolute;
+    right: -330px;
+    bottom: -45px;
+    z-index: 99;
+    transition: all .6s ease-in-out;
+}
+
+.mayak__red {
+    rotate: -90deg;
+    object-fit: cover;
+    position: absolute;
+    left: -350px;
+    top: -220px;
+    z-index: 0;
+    transition: all .6s ease-in-out;
+}
+
+/*ahmatova*/
+
+.ahmatova__content {
+    height: 520px;
+    width: 345px;
+    align-items: center;
+    position: relative;
+    padding: 45px 25px;
+    background: #2B2B2B;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.ahmatova__content:hover {
+    box-shadow: 7px -9px 25px 0 rgba(233, 191, 77, 0.1), 29px -36px 46px 0 rgba(233, 191, 77, 0.09), 66px -80px 62px 0 rgba(233, 191, 77, 0.05), 118px -142px 74px 0 rgba(233, 191, 77, 0.01), 184px -222px 81px 0 rgba(233, 191, 77, 0);
+    background: linear-gradient(180deg, #2b2b2b 0%, #212121 100%);
+    scale: 1.05;
+    .ahmatova__badge {
+        bottom: 15px;
+    }
+
+    .ahmatova__violet {
+        rotate: 0deg;
+        right: 145px;
+        bottom: -15px;
+    }
+
+    .ahmatova__red {
+        rotate: 0deg;
+        left: 55px;
+        top: -70px;
+    }
+    
+}
+
+.ahmatova {
+    position: relative;
+    z-index: 1;
+}
+
+.ahmatova__badge {
+    left: 50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+    background: #F4E5FF;
+    padding: 3px 5px;
+    border-radius: 3px;
+    max-width: 220px;
+    bottom: -120px;
+    z-index: 999;
+    transition: all .6s ease-in-out;
+}
+
+.ahmatova__name {
+    text-align: end;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1e1e1e;
+}
+
+.ahmatova__lastname {
+    text-align: start;
+    font-weight: 500;
+    font-size: 24px;
+    color: #E9BF4D;
+    padding-right: 50px;
+
+}
+
+.ahmatova__violet {
+    rotate: 90deg;
+    position: absolute;
+    right: 330px;
+    bottom: -45px;
+    z-index: 99;
+    transition: all .6s ease-in-out;
+}
+
+.ahmatova__red {
+    rotate: -90deg;
+    object-fit: cover;
+    position: absolute;
+    left: 350px;
+    top: -220px;
+    z-index: 0;
+    transition: all .6s ease-in-out;
+}
+
+/*links*/
+
+.link {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    align-items: center;
+    color: #2a2a2a;
+    background: #f4e5ff;
+    border-radius: 12px;
+    width: 345px;
+    height: 290px;
+    transition: all .3s ease-in-out;
+}
+
+.link:hover {
+    scale: 1.05;
+    background: #e8d0fa;
+    
+    .link__top {
+        rotate: -65deg;
+    }
+
+    .link__bottom {
+        rotate: 55deg;
+    }
+
+    .link__curve {
+        bottom: -20px;
+        right: -105px;
+    }
+}
+
+.link__top {
+    position: absolute;
+    top: -90px;
+    right: -70px;
+    transition: all .3s ease-in-out;
+    
+}
+
+.link__bottom {
+    position: absolute;
+    bottom: -140px;
+    left: -110px;
+    transition: all .3s ease-in-out;
+}
+
+.link__curve {
+    position: absolute;
+    bottom: -40px;
+    right: -85px;
+    transition: all .3s ease-in-out;
+}
