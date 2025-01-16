@@ -317,7 +317,7 @@ body {
 }
 
 .link:hover {
-    scale: 1.05;
+
     background: #e8d0fa;
     
     .link__top {
