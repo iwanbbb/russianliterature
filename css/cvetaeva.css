@@ -1,0 +1,195 @@
+/*base*/
+
+@font-face {
+    font-family: 'Isamiri';
+    src: url('./../fonts/IsamiRiDisplayBold.ttf');
+}
+
+body {
+    font-family: "Isamiri", serif;
+    background: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1135px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*blocks*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 35px;
+}
+
+/*cvetaeva*/
+
+.cvetaeva__content {
+    height: 520px;
+    width: 345px;
+    align-items: center;
+    position: relative;
+    padding: 90px 35px;
+    background: #2B2B2B;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.cvetaeva__content:hover {
+    .cvetaeva__badge {
+        bottom: -120px;
+    }
+
+    .cvetaeva__violet {
+        rotate: -90deg;
+        right: -330px;
+        bottom: -45px;
+    }
+
+    .cvetaeva__red {
+        left: -350px;    
+        rotate: 90deg;
+        top: -220px;
+    }
+    
+}
+
+.cvetaeva {
+    position: relative;
+    z-index: 1;
+}
+
+.cvetaeva__badge {
+    left: 50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+    background: #F4E5FF;
+    padding: 3px 5px;
+    border-radius: 3px;
+    max-width: 220px;
+    bottom: 20px;
+    z-index: 999;
+    transition: all .6s ease-in-out;
+}
+
+.cvetaeva__name {
+    text-align: start;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1e1e1e;
+    padding-right: 90px;
+}
+
+.cvetaeva__lastname {
+    text-align: end;
+    font-weight: 500;
+    font-size: 24px;
+    color: #E94D4D;
+    padding-left: 75px;
+}
+
+.cvetaeva__violet {
+
+    position: absolute;
+    rotate: 0deg;
+    right: -25px;
+    bottom: 50px;    
+    z-index: 99;
+    transition: all .6s ease-in-out;
+}
+
+.cvetaeva__red {
+    rotate: 0deg;
+    left: -10px;
+    top: -10px;
+
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    transition: all .6s ease-in-out;
+}
+
+/*button*/
+
+.link {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    align-items: center;
+    color: #2a2a2a;
+    background: #f4e5ff;
+    border-radius: 12px;
+    width: 345px;
+    height: 115px;
+    transition: all .3s ease-in-out;
+}
+
+.link:hover {
+
+    background: #e8d0fa;
+    
+    .link__top {
+        rotate: -65deg;
+    }
+
+    .link__bottom {
+        rotate: 55deg;
+    }
+
+    .link__curve {
+        bottom: -20px;
+        right: -105px;
+    }
+}
+
+.link__top {
+    scale: 0.85;
+    position: absolute;
+    top: -90px;
+    right: -70px;
+    transition: all .3s ease-in-out;
+    
+}
+
+.link__bottom {
+    scale: 0.6;
+    position: absolute;
+    bottom: -140px;
+    left: -125px;
+    transition: all .3s ease-in-out;
+}
+
+/*text-box*/
+
+.text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 725px;
+}
+
+.text span {
+    font-weight: 700;
+}
+
